@@ -1,0 +1,14 @@
+{
+  "from": "The MRI Educator's Blueprint <onboarding@resend.dev>",
+  "replyTo": "business@rodneyhu.com",
+  "tag": "corsmed-eec-demo",
+  "siteUrl": "",
+  "emails": [
+    { "file": "emails/day-0.md", "delayHours": 0 },
+    { "file": "emails/day-1.md", "delayHours": 24 },
+    { "file": "emails/day-2.md", "delayHours": 48 },
+    { "file": "emails/day-3.md", "delayHours": 72 },
+    { "file": "emails/day-4.md", "delayHours": 96 },
+    { "file": "emails/day-5.md", "delayHours": 120 }
+  ]
+}

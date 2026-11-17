@@ -1,0 +1,4 @@
+{
+  "functions": { "api/*.js": { "includeFiles": "{emails/**,drip.config.json}" } },
+  "headers": [{ "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }] }]
+}

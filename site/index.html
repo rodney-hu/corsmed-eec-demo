@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>The MRI Educator's Blueprint</title>
+<meta name="description" content="A free 5-day email course for MRI educators. Demo by Rodney Hu. Not affiliated with Corsmed.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><div class="mark">The MRI Educator's <span>Blueprint</span></div><div class="tag">Free 5-day email course</div></div></header>
+
+<main>
+<section class="hero-band"><div class="wrap hero">
+  <div>
+    <div class="eyebrow">For MRI educators</div>
+    <h1>Bridging classroom theory and clinical practice? Avoid these 5 mistakes.</h1>
+    <p class="lead">They leave students reciting TR and TE they can't use, watching from the back of the scan room, and freezing at a console they've never seen. Even if you think a simulator can never feel like a real scanner.</p>
+  </div>
+  <div class="card" id="optin">
+    <h2>Send me the Blueprint</h2>
+    <ul class="ticks">
+      <li>One mistake per day, each with a fix you can use in your next class</li>
+      <li>Short emails, about 4 minutes each</li>
+      <li>Educational content only. It does not replace your program's safety training</li>
+    </ul>
+    <form id="f" novalidate>
+      <label for="email">Your email</label>
+      <input id="email" name="email" type="email" autocomplete="email" placeholder="you@school.edu" required>
+      <div class="hp" aria-hidden="true"><label>Leave blank<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn" type="submit">Send My Free Blueprint</button>
+      <div class="err" id="err" role="alert"></div>
+      <p class="fine">Day 0 arrives right away, then one email a day for 5 days. Unsubscribe in one click.</p>
+    </form>
+  </div>
+</div></section>
+
+<section><div class="wrap narrow">
+  <h2 class="c">What's inside</h2>
+  <details class="acc" open><summary><b>Day 0</b><span>Welcome to the Blueprint</span></summary><p>What the next 5 days cover, and what this course is and is not.</p></details>
+  <details class="acc"><summary><b>Day 1</b><span>Teaching physics equations first</span></summary><p>Students recite TR and TE, then freeze at the console. Start from the image instead.</p></details>
+  <details class="acc"><summary><b>Day 2</b><span>Leaving hands-on practice to clinical placements</span></summary><p>Students watch from the back of the scan room. Give them reps before they get there.</p></details>
+  <details class="acc"><summary><b>Day 3</b><span>Assigning "go practice on your own"</span></summary><p>The login nobody opens after week two. Turn open practice into short, structured tasks.</p></details>
+  <details class="acc"><summary><b>Day 4</b><span>Grading the final picture instead of the choices behind it</span></summary><p>A lucky image earns full marks. Grade the parameter decisions that produced it.</p></details>
+  <details class="acc"><summary><b>Day 5</b><span>Teaching one scanner's buttons instead of the principles</span></summary><p>The student who knows one console freezes at the next. Teach what carries across vendors.</p></details>
+</div></section>
+
+<section class="tint"><div class="wrap about">
+  <div class="logo-card"><img src="/assets/corsmed-logo.avif" alt="Corsmed" width="220" height="44"></div>
+  <div>
+    <div class="eyebrow">About Corsmed</div>
+    <h2>The MRI simulator built for teaching</h2>
+    <ul class="ticks">
+      <li><b>A web-based MRI simulator.</b> Students change sequence, parameters and slice planning, and the image responds the way a real scanner would.</li>
+      <li><b>Vendor-neutral by design.</b> One interface that mirrors the workflow shared by GE, Siemens and Philips scanners.</li>
+      <li><b>Built for programs.</b> Courses, scan exercises, automatic grading and progress analytics in one place.</li>
+      <li><b>Trusted by educators.</b> Used by BCIT, NAIT, CNI College, Teesside University, the University of Cumbria and UCLH, and accepted by ARMRIT for MRI clinical externship hours.</li>
+    </ul>
+    <p class="fine">Source: <a href="https://www.corsmed.com" rel="noopener">corsmed.com</a></p>
+  </div>
+</div></section>
+
+<section><div class="wrap narrow">
+  <h2 class="c">Questions</h2>
+  <details class="acc"><summary><span>Who is this course for?</span></summary><p>Program directors, instructors and clinical educators who teach MRI students or new technologists.</p></details>
+  <details class="acc"><summary><span>Do I need a simulator to use the fixes?</span></summary><p>No. Each fix works with the images, cases and practice time your program already has. Day 5 shows how a simulator can make practice repeatable.</p></details>
+  <details class="acc"><summary><span>Can simulation replace clinical hours?</span></summary><p>No. Day 2 covers what a practice environment does well, and what only time with patients and a real scanner can teach.</p></details>
+  <details class="acc"><summary><span>Will this fit my current curriculum?</span></summary><p>Yes. Each day is one change you can try in your next class, not a new syllabus.</p></details>
+  <details class="acc"><summary><span>Is this safety training?</span></summary><p>No. It's educational content for instructors and doesn't replace your program's MRI safety training or site protocols.</p></details>
+  <details class="acc"><summary><span>How much time does it take?</span></summary><p>About 4 minutes a day for 5 days.</p></details>
+</div></section>
+
+<section class="cta-band"><div class="wrap c">
+  <h2>Ready to get students clinic-ready sooner?</h2>
+  <p>Five short emails. One fix per day for your next class.</p>
+  <a class="btn-light" href="#optin">Send My Free Blueprint</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">Demo by Rodney Hu. Not affiliated with or endorsed by Corsmed.</div></footer>
+
+<script>
+const f=document.getElementById('f'),err=document.getElementById('err');
+f.addEventListener('submit',async e=>{
+  e.preventDefault();err.textContent='';
+  const b=f.querySelector('button'),email=f.email.value.trim();
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){err.textContent='Enter a valid email address.';return}
+  b.disabled=true;b.textContent='Sending...';
+  try{
+    const r=await fetch('/api/subscribe',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email,company:f.company.value})});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok)throw new Error(j.error||'Something went wrong. Try again.');
+    location.href='/thanks.html';
+  }catch(x){err.textContent=x.message;b.disabled=false;b.textContent='Send My Free Blueprint'}
+});
+document.querySelector('.btn-light').addEventListener('click',()=>setTimeout(()=>f.email.focus({preventScroll:true}),400));
+</script>
+</body>
+</html>
